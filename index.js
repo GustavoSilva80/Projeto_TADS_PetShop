@@ -20,10 +20,24 @@ connection
     }).catch((Error)=>{
         console.log(Error);
     });
+//Session
+const session = require('express-session');
+
+app.get('/teste',(req,res)=>{res.send("Logado!")})
+app.use(session({
+    secret:'sdlaslkdjasldjsajdasjdlasdmasl', cookie:{maxAge:60000}, resave:false, saveUninitialized:false    
+}));
+
+app.use(function(req,res,next){
+    res.locals.user = req.session.user;
+    next();
+});
 //Rotas
 const funcionariosController = require('./server/controller/FuncionariosController');
+const login = require('./server/login/login');
 
 app.use('/',funcionariosController);
+app.use('/',login);
 app.get('/',(req,res)=>{res.render('./view/index')});
 
 app.listen('3000',(Error)=>{     
