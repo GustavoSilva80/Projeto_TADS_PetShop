@@ -22,7 +22,7 @@ router.post('/login',(req,res)=>{
                     email: user.email,
                     id: user.id
                 }
-                res.redirect('/teste');
+                res.redirect('/painel');
             }else{
                 console.log("Falha ao logar");
             }

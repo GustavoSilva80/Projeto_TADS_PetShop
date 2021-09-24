@@ -23,7 +23,7 @@ connection
 //Session
 const session = require('express-session');
 
-app.get('/teste',(req,res)=>{res.send("Logado!")})
+
 app.use(session({
     secret:'sdlaslkdjasldjsajdasjdlasdmasl', cookie:{maxAge:60000}, resave:false, saveUninitialized:false    
 }));
@@ -35,7 +35,9 @@ app.use(function(req,res,next){
 //Rotas
 const funcionariosController = require('./server/controller/FuncionariosController');
 const login = require('./server/login/login');
+const rotas = require('./server/routes/routes');
 
+app.use('/',rotas);
 app.use('/',funcionariosController);
 app.use('/',login);
 app.get('/',(req,res)=>{res.render('./view/index')});
