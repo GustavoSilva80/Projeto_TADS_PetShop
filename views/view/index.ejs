@@ -8,11 +8,11 @@
             
             <label for="user">Usuário</label>
             
-            <input type="text" placeholder="Digite seu nome de usuário"></li>
+            <input type="text" placeholder="Digite seu nome de usuário" required></li>
     
             <label for="password">Senha</label>
             
-            <input type="password" placeholder="********"></li>
+            <input type="password" placeholder="********" required></li>
 
             <br>
             
@@ -31,22 +31,23 @@
             
             <label for="email">Email</label>
 
-            <input type="text" placeholder="Digite seu email">
+            <input type="text" placeholder="Digite seu email" name="email" required>
 
             <label for="user">Usuário</label>
             
-            <input type="text" placeholder="Digite seu nome de usuário"></li>
+            <input type="text" placeholder="Digite seu nome de usuário" name="user" required></li>
     
             <label for="password">Senha</label>
             
-            <input type="password" placeholder="********"></li>
+            <input type="password" placeholder="********" required name="password"></li>
 
             <br>
             
-            <button type="submit">Cadastrar</button>
+            <button type="submit" onclick="succesfulRegister()">Cadastrar</button>
             
         </form>
     </div>
     <script src="/js/functions.js"></script>
+
 </body>
 </html>

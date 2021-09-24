@@ -1,3 +1,4 @@
+
 function showRegisterScreen () {
     let wrapper = document.querySelector(".wrapper");
     let wrapper_cadastro = document.querySelector('.wrapper_cadastro');
@@ -8,3 +9,4 @@ function showRegisterScreen () {
     }
     
 }
+
