@@ -3,9 +3,9 @@
 *{margin: 0;padding: 0;}
 
 body,html{width: 100%;height: 100%;text-align: center;background-image: url('../img/background.png'); background-repeat: no-repeat; background-size: cover; font-family: Arial, Helvetica, sans-serif;}
-a{text-decoration: none;}button:focus,input:focus{outline:none;}
+a{text-decoration: none;}button:focus,input:focus,textarea:focus{outline:none;}
 button{border:none;cursor:pointer;}
-input{border:none;}
+input,textarea{border:none;}
 ul{list-style:none;}
 
 /* PAGINA LOGIN/CADASTRO */
@@ -224,43 +224,95 @@ ul{list-style:none;}
 }
 /*#######################################################################*/
 
-#painel{
-    background:#D3D3D3;
-    width:80%;
-    height:520px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-}
-#navbar{
-    float: left;
-    padding:10px;
-    background:black;
-    height:500px;
-    color:yellow;
-}
-#navbar h1{
-    font-weight: 500;
-    letter-spacing: 0.2px;
-}
+/* Painel */
+@media screen and (min-width:1255px) {
+    #painel_home{
+        background:#D3D3D3;
+        width:80%;
+        height:520px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    #navbar{
+        float: left;
+        padding:10px;
+        background:black;
+        height:500px;
+        color:yellow;
+    }
+    #navbar h1{
+        font-weight: 500;
+        letter-spacing: 0.2px;
+    }
 
-#navbar ul li{
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 0.2px;
-    margin:10px 0px;
-    padding:5px;
-    border-bottom: 1px solid #D3D3D3;
-}
+    #navbar ul li{
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+        margin:10px 0px;
+        padding:5px;
+        border-bottom: 1px solid #D3D3D3;
+        cursor: pointer;
+    }
 
-#navbar i{
-    position:absolute;
-    top:70%;
-    font-size:100px;
-    transform: translateX(-50%);
-}
-#navbar .copy{
-    font-size:20px;
-    top:90%;
+    #navbar i{
+        position:absolute;
+        top:70%;
+        font-size:100px;
+        transform: translateX(-50%);
+    }
+    #navbar .copy{
+        font-size:20px;
+        top:90%;
+    
+    }
+    .home{
+        overflow: auto;
+        height: 100%;
+    }
+    /* AGENDAMENTO */
+    .agendamento{
+        display:contents;
+    }
+
+    .agendamento_active{
+        display:block;
+        margin:5px;
+        padding:5px;
+    }
+
+    .agendamento_active form{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .agendamento_active form label{
+       margin:10px 0px;
+    }
+    .agendamento_active form input{
+        margin:10px;
+        width:250px;
+        border-radius:15px;
+        padding:5px;
+    }
+    .agendamento_active form textarea{
+        width:500px;
+        height:350px;
+        font-size:20px;
+        border-radius:15px;
+    }
+    .agendamento_active form button{
+        padding: 10px;
+        width:200px;
+        font-size:20px;
+        background-color: yellow;
+        font-weight: bold;
+        border-radius:10px;
+        margin-top:10px;
+    }
+    .agendamento_active button:hover{
+        background:rgb(230, 226, 7);
+    }
 }

@@ -20,3 +20,22 @@ function backforLogin(){
     wrapper_cadastro.classList.remove('wrapper_cadastro_active')
 }
 
+
+function showAgendamento(){
+    let agendamento = document.querySelector('.agendamento');
+    
+    if(agendamento.className = "agendamento"){
+        agendamento.classList.add("agendamento_active");
+    }else{
+        closeWindow();
+    }
+}
+
+
+function closeWindow(){
+    
+    let agendamento = document.querySelector(".agendamento");
+
+    agendamento.classList.remove('agendamento_active')
+    
+}
