@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 
 *{margin: 0;padding: 0;}
@@ -115,6 +116,50 @@ ul{list-style:none;}
         background:rgb(230, 226, 7);
     }
 }
+   
+
+   .div{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .div2{
+
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .alinhado{
+
+      display: flex;
+      align-items: center;
+   }
+
+   .alinhado  input{
+
+       height: 30px;
+       width: 200px;
+       margin-bottom: 20px;
+       border: 0.1px  solid black;
+   }
+   .alinhado2{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+   }
+   .alinhado2 textarea{
+
+    border: 1px  solid black;
+   }
+
+
+
+
 @media screen and (min-width:1255px) {
     
     #img_home{
@@ -227,7 +272,7 @@ ul{list-style:none;}
 /* Painel */
 @media screen and (min-width:1255px) {
     #painel_home{
-        background:#D3D3D3;
+        background:#fcffff;
         width:80%;
         height:520px;
         position:absolute;
@@ -283,26 +328,20 @@ ul{list-style:none;}
         padding:5px;
     }
 
+ 
+     
+   
     .agendamento_active form{
         display:flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin-top: 80px;
     }
     .agendamento_active form label{
        margin:10px 0px;
     }
-    .agendamento_active form input{
-        margin:10px;
-        width:250px;
-        border-radius:15px;
-        padding:5px;
-    }
-    .agendamento_active form textarea{
-        width:500px;
-        height:350px;
-        font-size:20px;
-        border-radius:15px;
-    }
+  
+  
     .agendamento_active form button{
         padding: 10px;
         width:200px;
