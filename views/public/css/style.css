@@ -118,45 +118,7 @@ ul{list-style:none;}
 }
    
 
-   .div{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   }
-
-   .div2{
-
-    display: flex;
-    flex-wrap: wrap;
-   }
-   .alinhado{
-
-      display: flex;
-      align-items: center;
-   }
-
-   .alinhado  input{
-
-       height: 30px;
-       width: 200px;
-       margin-bottom: 20px;
-       border: 0.1px  solid black;
-   }
-   .alinhado2{
-
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    align-items: center;
-    justify-content: center;
-   }
-   .alinhado2 textarea{
-
-    border: 1px  solid black;
-   }
-
+  
 
 
 
@@ -280,6 +242,18 @@ ul{list-style:none;}
         left:50%;
         transform:translate(-50%,-50%);
     }
+    #img_painel{
+        width: 618px;
+        transform: translateX(-5%);
+    }
+    #home{
+        display:block;
+        margin:5px;
+        padding:5px;
+    }
+    #home p{
+        font-size: 50px;
+    }
     #navbar{
         float: left;
         padding:10px;
@@ -313,36 +287,53 @@ ul{list-style:none;}
         top:90%;
     
     }
-    .home{
+    .painel{
         overflow: auto;
         height: 100%;
     }
     /* AGENDAMENTO */
-    .agendamento{
-        display:contents;
-    }
 
-    .agendamento_active{
-        display:block;
+    #agendamento{
+        display:none;
         margin:5px;
         padding:5px;
-    }
-
- 
-     
+    } 
    
-    .agendamento_active form{
+    #agendamento form{
         display:flex;
         align-items: center;
         justify-content: center;
         margin-top: 80px;
     }
-    .agendamento_active form label{
+    #agendamento form label{
        margin:10px 0px;
     }
+
+    .campo  input{
+    
+        height: 30px;
+        width: 200px;
+        margin-bottom: 20px;
+        border: 0.1px  solid black;
+    }
+       
+    .campo2{
+    
+    display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        align-items: center;
+        justify-content: center;
+       }
+    
+       .campo2 textarea{
+    
+        border: 1px  solid black;
+       }
+    
   
   
-    .agendamento_active form button{
+    #agendamento form button{
         padding: 10px;
         width:200px;
         font-size:20px;
@@ -351,7 +342,24 @@ ul{list-style:none;}
         border-radius:10px;
         margin-top:10px;
     }
-    .agendamento_active button:hover{
+    #agendamento button:hover{
         background:rgb(230, 226, 7);
     }
+    /*BANHO/TOSA*/
+    /*GUSTAVO */
+    #banho{
+        display:none;
+        margin:5px;
+        padding:5px;
+    } 
+    /*CADASTRO CLIENTES */
+    
+    /*BENJAMIN */
+
+    #clientes{
+        display: none;
+        margin: 5px;
+        padding: 5px;
+    }
+    
 }

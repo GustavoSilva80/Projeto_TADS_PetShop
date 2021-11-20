@@ -2,10 +2,18 @@
 <body>
     <div id="painel_home">
        <%- include('./partials/navbar') %>
-       <div class="home">
+       <div class="painel">
+           <div id="home">
+                <p>Sistema de gerenciamento<br><b>LOVEPETSHOP</b></p>
+                <img id="img_painel" name="slide">
+           </div>
+           
            <%- include('./partials/agendamento') %>
+           <%- include('./partials/banho') %>
+           <%- include('./partials/clientes') %>
        </div>
     </div>
     <script src="/js/functions.js"></script>
+    <script src="/js/slider.js"></script>
 </body>
 </html>
