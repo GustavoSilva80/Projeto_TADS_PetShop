@@ -356,32 +356,36 @@ ul{list-style:none;}
     
     /*BENJAMIN */
 
-    .clientes{
+    #clientes{
         display: none;
         margin: 5px;
         padding: 5px;
     }
-    .clientes h2{
-    background-color: #0000cd;
-    text-align: center;
-    padding: auto;
 
-    }
-    .clientes form{
+    #clientes form{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 80px;
+        flex-direction: column;
+        margin-top: 50px;
     }
-    .clientes campo{
-        background: #fff8dc;
-        text-align: left;
-        padding: 0em;
-        text-size-adjust: 12px;
+    #clientes form input{
+        height: 30px;
+        width: 200px;
+        margin-bottom: 20px;
+        border: 0.1px  solid black;
+    }
+    #clientes form button{
+        padding: 10px;
+        width:200px;
+        font-size:20px;
+        background-color: yellow;
+        font-weight: bold;
+        border-radius:10px;
+        margin-top:10px;
     }
     #clientes button:hover{
-        background: ye#ffff00;
-        text-align: left;
-        padding: 0em;     
+        background:rgb(230, 226, 7);
     }
+    
 }
